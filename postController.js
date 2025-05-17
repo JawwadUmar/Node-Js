@@ -4,9 +4,9 @@ const posts = [
     {id: 2, post: "post2"}
 ];
 
-export const getPost = () => {
+const getPost = () => {
     return posts;
 }
 
-
+export {getPost}
 
