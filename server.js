@@ -7,9 +7,9 @@ const server = http.createServer((req, res) =>{
     // res.setHeader('Content-Type', 'text/html');
     // const statusCode = 404;
 
-    res.writeHead(404, {'Content-Type': 'text/html'});
-    
-    res.end("<h1>Hello World</h1>");
+    res.writeHead(404, {'Content-Type': 'application/JSON'});
+
+    res.end(JSON.stringify({message: 'Free Palestine'}));
 })
 
 server.listen(PORT, ()=>{
