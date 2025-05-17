@@ -8,5 +8,5 @@ const getPost = () => {
     return posts;
 }
 
-export {getPost}
+export default getPost
 
