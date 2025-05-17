@@ -4,8 +4,11 @@ import { text } from 'stream/consumers';
 const PORT = 8000;
 
 const server = http.createServer((req, res) =>{
-    res.setHeader('Content-Type', 'text/html');
-    res.statusCode = 404;
+    // res.setHeader('Content-Type', 'text/html');
+    // const statusCode = 404;
+
+    res.writeHead(404, {'Content-Type': 'text/html'});
+    
     res.end("<h1>Hello World</h1>");
 })
 
